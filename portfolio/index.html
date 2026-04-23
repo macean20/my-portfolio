@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio — Étudiant en Génie Logiciel, Réseaux & Systèmes · DevOps · Développement · Dakar, Sénégal">
+  <meta name="keywords" content="DevOps, Linux, Docker, Réseaux, Java, Python, JavaScript, React, ISM Dakar, Génie Logiciel">
+  <meta property="og:title" content="Votre Nom — Génie Logiciel · DevOps · Développement">
+  <meta property="og:description" content="Portfolio professionnel — Étudiant en Génie Logiciel, Réseaux & Systèmes à l'ISM Dakar">
+  <meta property="og:type" content="website">
+  <title>Votre Nom · Génie Logiciel & DevOps</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <style>
+    /* ── Certifications ──────────────────────────────────── */
+  </style>
+</head>
+<body>
+
+<div class="bg-orbs" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+<nav id="navbar" role="navigation" aria-label="Navigation principale">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Macean Christopher<span>.dev</span></a>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#home" class="active">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu mobile" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="home" class="page" aria-label="Introduction">
+  <div class="hero-inner">
+    <div class="hero-content">
+
+      <div class="hero-status fade-in">
+        <span class="pulse"></span>
+        Disponible pour un stage · Dakar, Sénégal
+      </div>
+
+      <div class="hero-eyebrow fade-in">Génie Logiciel · Réseaux & Systèmes</div>
+      <h1 class="hero-name fade-in">Macean Christopher</h1>
+      <p class="hero-role fade-in">
+        Étudiant <span class="highlight"></span> 
+        <span class="gradient-text">DevOps & Développement</span>
+      </p>
+
+      <div class="terminal-block fade-in">
+        <div><span class="prompt">$ </span><span class="cmd type-cmd" data-text="whoami --verbose">whoami --verbose</span><span class="cursor"></span></div>
+        <div><span class="output">→ formation:  </span><span class="val">Licence Génie Logiciel, Réseaux & Systèmes — ISM</span></div>
+        <div><span class="output">→ location:   </span><span class="val">Dakar, Sénégal</span></div>
+        <div><span class="output">→ stack:      </span><span class="val">Linux · Docker · Python · Java · JavaScript · CI/CD</span></div>
+        <div><span class="output">→ certs:      </span><span class="val">Cisco IT Essentials · Cybersécurité · Ethical Hacker</span></div>
+        <div><span class="output">→ status:     </span><span class="val" style="color:var(--success)">open_to_internship=true</span></div>
+      </div>
+
+      <p class="hero-desc fade-in">
+        Étudiant en Génie Logiciel à l'ISM, je développe des compétences en
+        <strong>développement web/mobile</strong>, <strong>administration système Linux</strong>
+        et <strong>pratiques DevOps</strong>. J'ai également une solide expérience en
+        gestion de projets et community management. Curieux et motivé, je recherche un
+        <strong>stage</strong> pour contribuer à des projets concrets.
+      </p>
+
+      <div class="hero-btns fade-in">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          Voir mes projets
+        </a>
+        <a href="cv/mon-cv.pdf" download class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Télécharger CV
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap fade-in">
+      <div class="hero-photo-frame">
+        <!-- ✅ Retirez ce commentaire et ajoutez votre photo dans assets/img/profile.jpeg -->
+        <img src="assets/img/profile.jpeg" alt="Photo de profil" class="hero-photo">
+        <div class="hero-photo-placeholder">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span>Votre photo ici<br><small>assets/img/profile.jpeg</small></span>
+        </div>
+        <div class="hero-badge">
+          <span class="hero-badge-num">4</span>
+          Certifications
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stats-row">
+            <span class="pulse"></span>
+            ISM Dakar · En cours
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ À PROPOS ═══════════════ -->
+<section id="about" aria-label="À propos de moi">
+  <div class="section">
+    <div class="section-tag">À propos</div>
+    <h2 class="section-title">Mon profil <span class="gradient-text">complet</span></h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="about-tabs">
+          <button class="about-tab active" data-tab="profil">Profil</button>
+          <button class="about-tab" data-tab="experience">Expériences</button>
+          <button class="about-tab" data-tab="education">Formation</button>
+        </div>
+
+        <!-- Profil -->
+        <div class="tab-panel active" id="tab-profil">
+          <p>Étudiant en <strong>Licence Génie Logiciel, Réseaux & Systèmes</strong> au Groupe ISM à Dakar, je développe des compétences polyvalentes couvrant le <strong>développement logiciel</strong> (web, mobile, back-end) et l'<strong>administration système & DevOps</strong>.</p>
+          <p>J'ai suivi des cours de <strong>Management de projet informatique</strong>, ce qui me permet d'organiser, planifier et suivre efficacement des projets. En dehors des études, mon expérience en <strong>organisation d'événements</strong> et <strong>community management</strong> me rend polyvalent et opérationnel.</p>
+          <p>Je recherche un <strong>stage</strong> pour mettre en pratique mes connaissances et contribuer à des projets concrets.</p>
+        </div>
+
+        <!-- Expériences -->
+        <div class="tab-panel" id="tab-experience">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot">💼</div>
+              <div class="timeline-content">
+                <div class="timeline-head">
+                  <span class="timeline-title">Manager & Community Manager</span>
+                  <span class="timeline-period">Mai 2020 – Déc. 2023</span>
+                </div>
+                <div class="timeline-company">Standard Entertainment · Port-au-Prince, Haïti</div>
+                <ul class="timeline-desc">
+                  <li>Gestion des réseaux sociaux et communication digitale</li>
+                  <li>Organisation et coordination d'événements (planification, logistique, promotion)</li>
+                  <li>Gestion de la relation avec le public et les partenaires</li>
+                  <li>Supervision d'équipe pour assurer le bon déroulement des événements</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">📱</div>
+              <div class="timeline-content">
+                <div class="timeline-head">
+                  <span class="timeline-title">Community Manager</span>
+                  <span class="timeline-period">Nov. 2022 – Nov. 2023</span>
+                </div>
+                <div class="timeline-company">Ekotek Energy · Port-au-Prince, Haïti</div>
+                <ul class="timeline-desc">
+                  <li>Gestion et animation des réseaux sociaux de l'entreprise</li>
+                  <li>Création et publication de contenus (textes, visuels)</li>
+                  <li>Interaction avec la communauté — messages & commentaires</li>
+                  <li>Participation à la stratégie de communication digitale</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formation -->
+        <div class="tab-panel" id="tab-education">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot">🎓</div>
+              <div class="timeline-content">
+                <div class="timeline-head">
+                  <span class="timeline-title">Licence Génie Logiciel, Réseaux & Systèmes</span>
+                  <span class="timeline-period">Déc. 2023 – En cours</span>
+                </div>
+                <div class="timeline-company">Groupe ISM · Dakar, Sénégal</div>
+                <ul class="timeline-desc">
+                  <li>Développement web & mobile (Java, Python, JS, HTML/CSS)</li>
+                  <li>Administration système Linux & Windows</li>
+                  <li>Réseaux, protocoles TCP/IP, cybersécurité</li>
+                  <li>Cloud computing & pratiques DevOps</li>
+                  <li>Management de projet informatique</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compétences -->
+      <div>
+        <div class="skills-grid stagger">
+          <div class="skill-card">
+            <div class="skill-card-head"><div class="skill-icon">🌐</div><span class="skill-card-name">Dev Web (JS/HTML/CSS)</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70" style="width:0"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-head"><div class="skill-icon">☕</div><span class="skill-card-name">Java / Python</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="55" style="width:0"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-head"><div class="skill-icon">🐧</div><span class="skill-card-name">Linux & Systèmes</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65" style="width:0"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-head"><div class="skill-icon">🌐</div><span class="skill-card-name">Réseaux / Cisco</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60" style="width:0"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-head"><div class="skill-icon">🐳</div><span class="skill-card-name">Docker / CI-CD</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="50" style="width:0"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-head"><div class="skill-icon">🔒</div><span class="skill-card-name">Cybersécurité</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="55" style="width:0"></div></div>
+          </div>
+        </div>
+        <div class="tools-list stagger" style="margin-top:1.5rem;">
+          <span class="tag">Linux / Bash</span>
+          <span class="tag">Python</span>
+          <span class="tag purple">Java</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag orange">HTML / CSS</span>
+          <span class="tag purple">React</span>
+          <span class="tag">Docker</span>
+          <span class="tag purple">Git / GitHub</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag orange">TCP/IP</span>
+          <span class="tag">Wireshark</span>
+          <span class="tag purple">Cisco IOS</span>
+          <span class="tag orange">Cloud (initiation)</span>
+          <span class="tag">Gestion de projet</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PROJETS ═══════════════ -->
+<section id="projects" aria-label="Mes projets">
+  <div class="section">
+    <div class="section-tag">Projets</div>
+    <h2 class="section-title">Réalisations <span class="gradient-text">techniques</span></h2>
+
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="prog">Programmation</button>
+      <button class="filter-btn" data-filter="devops">DevOps / Sys</button>
+      <button class="filter-btn" data-filter="linux">Linux</button>
+      <button class="filter-btn" data-filter="network">Réseaux</button>
+      <button class="filter-btn" data-filter="docker">Docker</button>
+    </div>
+
+    <div class="projects-grid stagger">
+
+      <!-- Programmation : React -->
+      <article class="project-card" data-category="prog">
+        <div class="project-header">
+          <div class="project-icon">🌐</div>
+          <span class="project-category cat-prog">Développement Web</span>
+          <h3 class="project-title">Application Web React</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Application front-end React avec routing, gestion d'état, appels API REST et interface responsive — projet académique ISM.</p>
+          <div class="project-tech">
+            <span class="tag purple">React</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag orange">CSS / Tailwind</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="projects/react-app/index.html" class="btn-project btn-live">🔗 Voir le projet</a>
+          <a href="https://github.com/votre-github/react-app" target="_blank" rel="noopener" class="btn-project btn-code">⌥ Code</a>
+        </div>
+      </article>
+
+      <!-- Programmation : Java -->
+      <article class="project-card" data-category="prog">
+        <div class="project-header">
+          <div class="project-icon">☕</div>
+          <span class="project-category cat-prog">Java</span>
+          <h3 class="project-title">Application Java — Gestion</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Application de gestion développée en Java (POO) : gestion d'entités, interface graphique et persistance de données avec JDBC.</p>
+          <div class="project-tech">
+            <span class="tag purple">Java</span>
+            <span class="tag">POO</span>
+            <span class="tag orange">JDBC / MySQL</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="projects/java-app/index.html" class="btn-project btn-live">🔗 Voir le projet</a>
+          <a href="https://github.com/votre-github/java-gestion" target="_blank" rel="noopener" class="btn-project btn-code">⌥ Code</a>
+        </div>
+      </article>
+
+      <!-- Programmation : Python -->
+      <article class="project-card" data-category="prog">
+        <div class="project-header">
+          <div class="project-icon">🐍</div>
+          <span class="project-category cat-prog">Python</span>
+          <h3 class="project-title">Scripts Python d'Automatisation</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Scripts Python : web scraping, automatisation de tâches, traitement de fichiers CSV/JSON et génération de rapports automatisés.</p>
+          <div class="project-tech">
+            <span class="tag">Python</span>
+            <span class="tag orange">Pandas</span>
+            <span class="tag purple">BeautifulSoup</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="projects/python-scripts/index.html" class="btn-project btn-live">🔗 Voir le projet</a>
+          <a href="https://github.com/votre-github/python-scripts" target="_blank" rel="noopener" class="btn-project btn-code">⌥ Code</a>
+        </div>
+      </article>
+
+      <!-- DevOps : CI/CD -->
+      <article class="project-card" data-category="devops">
+        <div class="project-header">
+          <div class="project-icon">🚀</div>
+          <span class="project-category cat-devops">CI/CD</span>
+          <h3 class="project-title">Pipeline CI/CD Automatisé</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Pipeline GitHub Actions : build, test et déploiement automatique d'une application containerisée sur un serveur Linux.</p>
+          <div class="project-tech">
+            <span class="tag purple">GitHub Actions</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Bash</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="projects/ci-cd-pipeline/index.html" class="btn-project btn-live">🔗 Voir le projet</a>
+          <a href="https://github.com/votre-github/ci-cd-pipeline" target="_blank" rel="noopener" class="btn-project btn-code">⌥ Code</a>
+        </div>
+      </article>
+
+      <!-- Linux -->
+      <article class="project-card" data-category="linux">
+        <div class="project-header">
+          <div class="project-icon">🐧</div>
+          <span class="project-category cat-linux">Linux</span>
+          <h3 class="project-title">Automatisation Bash & Ansible</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Scripts Bash pour l'automatisation système : hardening, backup, monitoring de ressources et gestion de logs automatisée.</p>
+          <div class="project-tech">
+            <span class="tag">Bash</span>
+            <span class="tag purple">Ansible</span>
+            <span class="tag">Cron</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="projects/linux-automation/index.html" class="btn-project btn-live">🔗 Voir le projet</a>
+          <a href="https://github.com/votre-github/linux-automation" target="_blank" rel="noopener" class="btn-project btn-code">⌥ Code</a>
+        </div>
+      </article>
+
+      <!-- Docker -->
+      <article class="project-card" data-category="docker">
+        <div class="project-header">
+          <div class="project-icon">🐳</div>
+          <span class="project-category cat-docker">Docker</span>
+          <h3 class="project-title">Docker Compose Lab</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Environnements Docker Compose multi-services : stack LAMP, WordPress + MariaDB + Redis, reverse proxy Nginx.</p>
+          <div class="project-tech">
+            <span class="tag">Docker Compose</span>
+            <span class="tag orange">Nginx</span>
+            <span class="tag">MariaDB</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="projects/docker-compose-lab/index.html" class="btn-project btn-live">🔗 Voir le projet</a>
+          <a href="https://github.com/votre-github/docker-lab" target="_blank" rel="noopener" class="btn-project btn-code">⌥ Code</a>
+        </div>
+      </article>
+
+      <!-- Réseaux -->
+      <article class="project-card" data-category="network">
+        <div class="project-header">
+          <div class="project-icon">🔒</div>
+          <span class="project-category cat-network">Réseaux & Sécurité</span>
+          <h3 class="project-title">Maquette Réseau Sécurisée</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Conception et simulation d'un réseau d'entreprise sécurisé : VLAN, routage inter-VLAN, firewall, ACL, VPN WireGuard.</p>
+          <div class="project-tech">
+            <span class="tag purple">Cisco Packet Tracer</span>
+            <span class="tag">VLAN / ACL</span>
+            <span class="tag orange">VPN</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="projects/network-security/index.html" class="btn-project btn-live">🔗 Voir le projet</a>
+          <a href="https://github.com/votre-github/network-lab" target="_blank" rel="noopener" class="btn-project btn-code">⌥ Code</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CV Download -->
+    <div class="cv-download-section fade-in">
+      <div class="cv-info">
+        <h3>📄 Mon Curriculum Vitae</h3>
+        <p>Téléchargez mon CV complet — formation, expériences, certifications et compétences</p>
+      </div>
+      <a href="cv/mon-cv.pdf" download class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Télécharger le CV (PDF)
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+<section id="certifications" aria-label="Mes certifications">
+  <div class="section">
+    <div class="section-tag">Certifications</div>
+    <h2 class="section-title">Mes <span class="gradient-text">certifications</span></h2>
+    <p style="color:var(--muted);max-width:600px;margin-bottom:2rem;">
+      Certifications obtenues dans le cadre de ma formation et de mon apprentissage autonome,
+      couvrant les réseaux, la cybersécurité et le marketing digital.
+    </p>
+
+    <div class="certs-grid stagger">
+      <div class="cert-card">
+        <div class="cert-logo cisco">🛡️</div>
+        <div class="cert-body">
+          <div class="cert-name">IT Essentials</div>
+          <div class="cert-issuer">Cisco Networking Academy</div>
+          <span class="cert-date">Juin 2024</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-logo cisco">🔐</div>
+        <div class="cert-body">
+          <div class="cert-name">Introduction à la Cybersécurité</div>
+          <div class="cert-issuer">Cisco Networking Academy</div>
+          <span class="cert-date">Novembre 2025</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-logo cisco">🎯</div>
+        <div class="cert-body">
+          <div class="cert-name">Ethical Hacker</div>
+          <div class="cert-issuer">Cisco Networking Academy</div>
+          <span class="cert-date">Décembre 2025</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-logo kaw">📈</div>
+        <div class="cert-body">
+          <div class="cert-name">Introduction au Marketing</div>
+          <div class="cert-issuer">Kaw Academy</div>
+          <span class="cert-date">Août 2024</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;padding:1.5rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);">
+      <div class="section-tag" style="margin-bottom:0.75rem;">Objectifs en préparation</div>
+      <div class="tools-list">
+        <span class="tag">AWS Cloud Practitioner</span>
+        <span class="tag purple">Linux Professional (LPIC-1)</span>
+        <span class="tag orange">Docker Certified Associate</span>
+        <span class="tag">CompTIA Security+</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact" aria-label="Contact">
+  <div class="section">
+    <div class="section-tag">Contact</div>
+    <h2 class="section-title">Travaillons <span class="gradient-text">ensemble</span></h2>
+
+    <div class="contact-grid">
+      <div class="contact-info stagger">
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div>
+            <div class="contact-item-text">Email</div>
+            <!-- ✅ Remplacez par votre email -->
+            <a href="mailto:votre.email@gmail.com" class="contact-item-val">votre.email@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-text">Localisation</div>
+            <span class="contact-item-val">Dakar, Sénégal</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">💼</div>
+          <div>
+            <div class="contact-item-text">LinkedIn</div>
+            <!-- ✅ Remplacez par votre URL LinkedIn -->
+            <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener" class="contact-item-val">Voir mon profil →</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🐙</div>
+          <div>
+            <div class="contact-item-text">GitHub</div>
+            <!-- ✅ Remplacez par votre URL GitHub -->
+            <a href="https://github.com/votre-github" target="_blank" rel="noopener" class="contact-item-val">Voir mes repos →</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🎓</div>
+          <div>
+            <div class="contact-item-text">Formation</div>
+            <span class="contact-item-val">ISM Dakar · Génie Logiciel R&S</span>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        ✅ POUR RECEVOIR LES MESSAGES SUR VOTRE VRAI EMAIL :
+        ─────────────────────────────────────────────────────
+        1. Allez sur https://formspree.io → Créez un compte GRATUIT
+        2. Cliquez "New Form" → Entrez votre email (ex: votre.email@gmail.com)
+        3. Copiez l'ID du formulaire (ex: xpzvkjdo)
+        4. Remplacez VOTRE_ID_FORMSPREE dans l'action ci-dessous par cet ID
+        5. Chaque message envoyé depuis le site arrivera directement dans votre boîte mail !
+      -->
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/VOTRE_ID_FORMSPREE"
+        method="POST"
+        class="contact-form fade-in"
+        novalidate
+      >
+        <input type="hidden" name="_replyto" value="votre.email@gmail.com">
+        <input type="hidden" name="_subject" value="✉️ Nouveau message depuis mon portfolio">
+
+        <div class="form-group">
+          <label class="form-label" for="name">Nom complet</label>
+          <input type="text" id="name" name="name" class="form-input"
+                 placeholder="Jean Dupont" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Adresse email</label>
+          <input type="email" id="email" name="email" class="form-input"
+                 placeholder="jean@exemple.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="subject">Sujet</label>
+          <input type="text" id="subject" name="subject" class="form-input"
+                 placeholder="Stage, collaboration, projet...">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" name="message" class="form-textarea"
+                    placeholder="Décrivez votre projet, opportunité ou question..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Envoyer le message
+        </button>
+        <div id="form-status" class="form-status" role="alert"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      Votre Nom
+      <p>Génie Logiciel · DevOps · Dakar, Sénégal</p>
+    </div>
+    <nav class="footer-links" aria-label="Réseaux sociaux">
+      <!-- ✅ Remplacez tous les liens -->
+      <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener" class="footer-link" title="LinkedIn" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/votre-github" target="_blank" rel="noopener" class="footer-link" title="GitHub" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://instagram.com/votre-instagram" target="_blank" rel="noopener" class="footer-link" title="Instagram" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="mailto:votre.email@gmail.com" class="footer-link" title="Email" aria-label="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </nav>
+    <p class="footer-copy">© 2026 <span>Votre Nom</span> · ISM Dakar · Fait avec ❤️</p>
+  </div>
+</footer>
+
+<button id="scroll-top" aria-label="Retour en haut">↑</button>
+<script src="assets/js/script.js"></script>
+<script>
+  /* Tabs À propos */
+  document.querySelectorAll('.about-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.about-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

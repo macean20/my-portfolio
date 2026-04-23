@@ -1,0 +1,22 @@
+export const personal = {
+  name: 'Macean Christopher',
+  displayName: 'Macean Christopher',
+  logoSuffix: '.dev',
+  title: 'Génie Logiciel · Réseaux & Systèmes',
+  role: 'DevOps & Développement',
+  status: 'Disponible pour un stage · Dakar, Sénégal',
+  location: 'Dakar, Sénégal',
+  formation: 'Licence Génie Logiciel, Réseaux & Systèmes — ISM',
+  stack: 'Linux · Docker · Python · Java · JavaScript · CI/CD',
+  certs: 'Cisco IT Essentials · Cybersécurité · Ethical Hacker',
+  email: 'maceanchristopher7@gmail.com',
+  bio: "Étudiant en Génie Logiciel à l'ISM, je développe des compétences en développement web/mobile, administration système Linux et pratiques DevOps. J'ai également une solide expérience en gestion de projets et community management. Curieux et motivé, je recherche un stage pour contribuer à des projets concrets.",
+  social: {
+    linkedin: 'https://linkedin.com/in/votre-profil',
+    github: 'https://github.com/macean20',
+    instagram: 'https://instagram.com/votre-instagram',
+  },
+  certCount: 4,
+  photo: '/assets/img/profile.jpeg',
+  cv: '/cv/mon-cv.pdf',
+}
