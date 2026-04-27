@@ -6,16 +6,20 @@ const DownloadIcon = () => (
   </svg>
 )
 
-export default function CVDownload({ cvUrl }) {
+export default function CVDownload({ cvUrl, tCv }) {
+  const title = tCv?.title || '📄 Mon Curriculum Vitae'
+  const desc = tCv?.desc || 'Téléchargez mon CV complet — formation, expériences, certifications et compétences'
+  const btn = tCv?.btn || 'Télécharger le CV (PDF)'
+
   return (
     <div className="cv-download-section fade-in">
       <div className="cv-info">
-        <h3>📄 Mon Curriculum Vitae</h3>
-        <p>Téléchargez mon CV complet — formation, expériences, certifications et compétences</p>
+        <h3>{title}</h3>
+        <p>{desc}</p>
       </div>
       <a href={cvUrl} download className="btn btn-primary">
         <DownloadIcon />
-        Télécharger le CV (PDF)
+        {btn}
       </a>
     </div>
   )
@@ -23,4 +27,5 @@ export default function CVDownload({ cvUrl }) {
 
 CVDownload.propTypes = {
   cvUrl: PropTypes.string.isRequired,
+  tCv: PropTypes.object,
 }

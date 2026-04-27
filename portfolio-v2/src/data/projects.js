@@ -1,7 +1,10 @@
+const CDN = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons'
+
 export const projects = [
   {
     id: 'react-app',
-    icon: '🌐',
+    icon: `${CDN}/react/react-original.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(97,218,251,0.12) 0%, rgba(13,13,30,0.98) 100%)',
     title: 'Application Web React',
     category: 'prog',
     categoryLabel: 'Développement Web',
@@ -18,7 +21,8 @@ export const projects = [
   },
   {
     id: 'java-app',
-    icon: '☕',
+    icon: `${CDN}/java/java-original.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(248,152,32,0.14) 0%, rgba(20,12,5,0.98) 100%)',
     title: 'Application Java — Gestion',
     category: 'prog',
     categoryLabel: 'Java',
@@ -35,7 +39,8 @@ export const projects = [
   },
   {
     id: 'python-scripts',
-    icon: '🐍',
+    icon: `${CDN}/python/python-original.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(55,118,171,0.14) 0%, rgba(255,212,59,0.06) 100%)',
     title: "Scripts Python d'Automatisation",
     category: 'prog',
     categoryLabel: 'Python',
@@ -52,7 +57,8 @@ export const projects = [
   },
   {
     id: 'ci-cd-pipeline',
-    icon: '🚀',
+    icon: `${CDN}/jenkins/jenkins-original.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(0,229,255,0.1) 0%, rgba(123,97,255,0.08) 100%)',
     title: 'Pipeline CI/CD Automatisé',
     category: 'devops',
     categoryLabel: 'CI/CD',
@@ -74,7 +80,7 @@ export const projects = [
       ],
       features: [
         'Déploiement entièrement automatisé via scripts Bash/Python',
-        'Gestion des secrets et variables d\'environnement sécurisée',
+        "Gestion des secrets et variables d'environnement sécurisée",
         'Monitoring intégré avec alertes configurables',
         'Documentation complète avec procédures opérationnelles',
         'Tests automatisés (unit, integration, smoke tests)',
@@ -83,7 +89,8 @@ export const projects = [
   },
   {
     id: 'linux-automation',
-    icon: '🐧',
+    icon: `${CDN}/ansible/ansible-original.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(255,107,53,0.14) 0%, rgba(20,10,5,0.98) 100%)',
     title: 'Automatisation Bash & Ansible',
     category: 'linux',
     categoryLabel: 'Linux',
@@ -100,7 +107,8 @@ export const projects = [
   },
   {
     id: 'docker-compose-lab',
-    icon: '🐳',
+    icon: `${CDN}/docker/docker-original.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(36,150,237,0.16) 0%, rgba(5,15,30,0.98) 100%)',
     title: 'Docker Compose Lab',
     category: 'docker',
     categoryLabel: 'Docker',
@@ -117,7 +125,8 @@ export const projects = [
   },
   {
     id: 'network-security',
-    icon: '🔒',
+    icon: `${CDN}/networkx/networkx-original.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(123,97,255,0.14) 0%, rgba(12,5,20,0.98) 100%)',
     title: 'Maquette Réseau Sécurisée',
     category: 'network',
     categoryLabel: 'Réseaux & Sécurité',
@@ -134,7 +143,8 @@ export const projects = [
   },
   {
     id: 'monitoring-stack',
-    icon: '📊',
+    icon: `${CDN}/prometheus/prometheus-original.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(229,128,45,0.14) 0%, rgba(230,75,12,0.06) 100%)',
     title: 'Stack Prometheus / Grafana',
     category: 'devops',
     categoryLabel: 'Monitoring',
@@ -151,7 +161,8 @@ export const projects = [
   },
   {
     id: 'infrastructure-k8s',
-    icon: '☸️',
+    icon: `${CDN}/kubernetes/kubernetes-plain.svg`,
+    bgGradient: 'linear-gradient(135deg, rgba(50,108,229,0.16) 0%, rgba(5,10,25,0.98) 100%)',
     title: 'Infrastructure K8s sur AWS',
     category: 'devops',
     categoryLabel: 'Kubernetes',

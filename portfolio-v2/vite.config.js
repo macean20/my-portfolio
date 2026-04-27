@@ -15,6 +15,8 @@ export default defineConfig({
       '@hooks': r('./src/hooks'),
       '@styles': r('./src/styles'),
       '@utils': r('./src/utils'),
+      '@i18n':  r('./src/i18n'),
+      '@contexts': r('./src/contexts'),
     },
   },
   build: {

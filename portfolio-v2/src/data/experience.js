@@ -34,18 +34,12 @@ export const education = [
     title: 'Licence Génie Logiciel, Réseaux & Systèmes',
     period: 'Déc. 2023 – En cours',
     company: 'Groupe ISM · Dakar, Sénégal',
-    description: [
-      'Développement web & mobile (Java, Python, JS, HTML/CSS)',
-      'Administration système Linux & Windows',
-      'Réseaux, protocoles TCP/IP, cybersécurité',
-      'Cloud computing & pratiques DevOps',
-      'Management de projet informatique',
-    ],
+    description: [],
   },
 ]
 
 export const profileBio = [
-  "Étudiant en <strong>Licence Génie Logiciel, Réseaux & Systèmes</strong> au Groupe ISM à Dakar, je développe des compétences polyvalentes couvrant le <strong>développement logiciel</strong> (web, mobile, back-end) et l'<strong>administration système & DevOps</strong>.",
-  "J'ai suivi des cours de <strong>Management de projet informatique</strong>, ce qui me permet d'organiser, planifier et suivre efficacement des projets. En dehors des études, mon expérience en <strong>organisation d'événements</strong> et <strong>community management</strong> me rend polyvalent et opérationnel.",
-  "Je recherche un <strong>stage</strong> pour mettre en pratique mes connaissances et contribuer à des projets concrets.",
+  "Étudiant en <strong>Licence 3 Génie Logiciel, Réseaux & Systèmes</strong> au Groupe ISM à Dakar, je me spécialise dans le <strong>développement fullstack web & mobile</strong>, avec une forte appétence pour la programmation orientée objet, les architectures logicielles modernes et les bonnes pratiques de conception.",
+  "Passionné par l'ingénierie logicielle, je conçois et développe des applications performantes en combinant des backends robustes (<strong>Node.js, Express, Spring Boot</strong>) à des interfaces utilisateurs modernes et réactives (<strong>Angular, React, Vue.js</strong>). Je m'intéresse également aux <strong>pratiques DevOps</strong> — Docker, Kubernetes, CI/CD — pour automatiser et fiabiliser les déploiements.",
+  "Mon objectif est de créer des <strong>solutions digitales innovantes</strong>, performantes et centrées utilisateur, tout en consolidant mes compétences sur les technologies web de pointe.",
 ]

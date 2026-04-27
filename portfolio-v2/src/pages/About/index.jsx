@@ -1,26 +1,36 @@
 import { useState } from 'react'
 import { useScrollAnimation } from '@hooks/useScrollAnimation'
-import { skills, tools } from '@data/skills'
-import { experiences, education, profileBio } from '@data/experience'
+import { useLanguage } from '@contexts/LanguageContext'
+import { techStack } from '@data/skills'
+import { experiences, education } from '@data/experience'
 import SectionHeader from '@components/ui/SectionHeader'
-import SkillBar from '@components/ui/SkillBar'
 import TimelineItem from '@components/ui/TimelineItem'
-import Tag from '@components/ui/Tag'
-
-const TABS = [
-  { id: 'profil', label: 'Profil' },
-  { id: 'experience', label: 'Expériences' },
-  { id: 'education', label: 'Formation' },
-]
 
 export default function About() {
   const [activeTab, setActiveTab] = useState('profil')
+  const { t } = useLanguage()
   useScrollAnimation()
+
+  const TABS = [
+    { id: 'profil', label: t.about.tabs.profil },
+    { id: 'experience', label: t.about.tabs.experience },
+    { id: 'education', label: t.about.tabs.education },
+  ]
+
+  const expItems = experiences.map(exp => ({
+    ...exp,
+    ...t.experience.items[exp.id],
+  }))
+
+  const eduItems = education.map(edu => ({
+    ...edu,
+    ...t.education.items[edu.id],
+  }))
 
   return (
     <section id="about" aria-label="À propos de moi">
       <div className="section">
-        <SectionHeader tag="À propos" title="Mon profil complet" highlightWord="complet" />
+        <SectionHeader tag={t.about.tag} title={t.about.title} highlightWord={t.about.highlightWord} />
 
         <div className="about-grid">
           <div className="about-text">
@@ -38,7 +48,7 @@ export default function About() {
 
             {activeTab === 'profil' && (
               <div className="tab-panel active" id="tab-profil">
-                {profileBio.map((para, i) => (
+                {t.about.profileBio.map((para, i) => (
                   <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
                 ))}
               </div>
@@ -47,7 +57,7 @@ export default function About() {
             {activeTab === 'experience' && (
               <div className="tab-panel active" id="tab-experience">
                 <div className="timeline">
-                  {experiences.map(exp => (
+                  {expItems.map(exp => (
                     <TimelineItem key={exp.id} {...exp} />
                   ))}
                 </div>
@@ -57,7 +67,7 @@ export default function About() {
             {activeTab === 'education' && (
               <div className="tab-panel active" id="tab-education">
                 <div className="timeline">
-                  {education.map(edu => (
+                  {eduItems.map(edu => (
                     <TimelineItem key={edu.id} {...edu} />
                   ))}
                 </div>
@@ -65,15 +75,21 @@ export default function About() {
             )}
           </div>
 
-          <div>
-            <div className="skills-grid stagger">
-              {skills.map(skill => (
-                <SkillBar key={skill.name} icon={skill.icon} name={skill.name} level={skill.level} />
-              ))}
-            </div>
-            <div className="tools-list stagger" style={{ marginTop: '1.5rem' }}>
-              {tools.map(tool => (
-                <Tag key={tool.label} label={tool.label} variant={tool.variant} />
+          <div className="about-tech-col">
+            <div className="tech-section-label">{t.about.techLabel}</div>
+            <div className="tech-grid stagger">
+              {techStack.map(tech => (
+                <div className="tech-item" key={tech.name}>
+                  <div className="tech-icon-wrap">
+                    <img
+                      src={tech.icon}
+                      alt={tech.name}
+                      className={`tech-icon${tech.invert ? ' tech-icon-invert' : ''}`}
+                      onError={e => { e.currentTarget.style.opacity = '0' }}
+                    />
+                  </div>
+                  <span className="tech-name">{tech.name}</span>
+                </div>
               ))}
             </div>
           </div>

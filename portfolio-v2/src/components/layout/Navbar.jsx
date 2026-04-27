@@ -1,20 +1,22 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { personal } from '@data/personal'
+import { useLanguage } from '@contexts/LanguageContext'
 import { SCROLL_THRESHOLD } from '@utils/constants'
-
-const NAV_LINKS = [
-  { to: '/', label: 'Accueil' },
-  { to: '/about', label: 'À propos' },
-  { to: '/projects', label: 'Projets' },
-  { to: '/certifications', label: 'Certifications' },
-  { to: '/contact', label: 'Contact', isCta: true },
-]
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const { lang, toggleLang, t } = useLanguage()
+
+  const NAV_LINKS = [
+    { to: '/', label: t.nav.home },
+    { to: '/about', label: t.nav.about },
+    { to: '/projects', label: t.nav.projects },
+    { to: '/certifications', label: t.nav.certifications },
+    { to: '/contact', label: t.nav.contact, isCta: true },
+  ]
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > SCROLL_THRESHOLD)
@@ -22,8 +24,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Close mobile menu on route change
-  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { setMenuOpen(false) }, [location.pathname])
 
   return (
@@ -53,16 +53,30 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <li>
+            <button className="lang-toggle" onClick={toggleLang} aria-label="Switch language">
+              <span className={lang === 'fr' ? 'lang-active' : ''}>FR</span>
+              <span className="lang-sep">|</span>
+              <span className={lang === 'en' ? 'lang-active' : ''}>EN</span>
+            </button>
+          </li>
         </ul>
 
-        <button
-          className="hamburger"
-          aria-label="Menu mobile"
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen(prev => !prev)}
-        >
-          <span /><span /><span />
-        </button>
+        <div className="nav-right">
+          <button className="lang-toggle lang-toggle-desktop" onClick={toggleLang} aria-label="Switch language">
+            <span className={lang === 'fr' ? 'lang-active' : ''}>FR</span>
+            <span className="lang-sep">|</span>
+            <span className={lang === 'en' ? 'lang-active' : ''}>EN</span>
+          </button>
+          <button
+            className="hamburger"
+            aria-label="Menu mobile"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(prev => !prev)}
+          >
+            <span /><span /><span />
+          </button>
+        </div>
       </div>
     </nav>
   )

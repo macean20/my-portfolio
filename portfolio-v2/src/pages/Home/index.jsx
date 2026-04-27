@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { personal } from '@data/personal'
-import HeroTerminal from '@components/sections/HeroTerminal'
 import { useScrollAnimation } from '@hooks/useScrollAnimation'
+import { useLanguage } from '@contexts/LanguageContext'
 
 const ProjectsIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -23,42 +23,29 @@ const UserIcon = () => (
 )
 
 export default function Home() {
+  const { t } = useLanguage()
   useScrollAnimation()
 
   return (
     <section id="home" className="page" aria-label="Introduction">
       <div className="hero-inner">
         <div className="hero-content">
-          <div className="hero-status fade-in">
-            <span className="pulse" />
-            {personal.status}
-          </div>
-
-          <div className="hero-eyebrow fade-in">{personal.title}</div>
+          <div className="hero-eyebrow fade-in">{t.home.title}</div>
           <h1 className="hero-name fade-in">{personal.displayName}</h1>
           <p className="hero-role fade-in">
-            Étudiant <span className="highlight" />
-            <span className="gradient-text">{personal.role}</span>
+            <span className="gradient-text">{t.home.role}</span>
           </p>
 
-          <HeroTerminal
-            formation={personal.formation}
-            location={personal.location}
-            stack={personal.stack}
-            certs={personal.certs}
-            status="open_to_internship=true"
-          />
-
-          <p className="hero-desc fade-in">{personal.bio}</p>
+          <p className="hero-desc fade-in">{t.home.bio}</p>
 
           <div className="hero-btns fade-in">
             <Link to="/projects" className="btn btn-primary">
               <ProjectsIcon />
-              Voir mes projets
+              {t.home.viewProjects}
             </Link>
             <a href={personal.cv} download className="btn btn-outline">
               <DownloadIcon />
-              Télécharger CV
+              {t.home.downloadCV}
             </a>
           </div>
         </div>
@@ -77,12 +64,12 @@ export default function Home() {
             </div>
             <div className="hero-badge">
               <span className="hero-badge-num">{personal.certCount}</span>
-              Certifications
+              {t.home.certifications}
             </div>
             <div className="hero-stats">
               <div className="hero-stats-row">
                 <span className="pulse" />
-                ISM Dakar · En cours
+                {t.home.statsLabel}
               </div>
             </div>
           </div>

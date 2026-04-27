@@ -2,13 +2,23 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Tag from './Tag'
 
-export default function ProjectCard({ project }) {
-  const { id, icon, title, category, categoryLabel, categoryClass, description, tags, githubUrl } = project
+export default function ProjectCard({ project, tProjects }) {
+  const { id, icon, bgGradient, title, category, categoryLabel, categoryClass, description, tags, githubUrl } = project
 
   return (
     <article className="project-card" data-category={category}>
-      <div className="project-header">
-        <div className="project-icon">{icon}</div>
+      <div
+        className="project-header"
+        style={bgGradient ? { background: bgGradient } : {}}
+      >
+        <div className="project-icon">
+          <img
+            src={icon}
+            alt={title}
+            className="project-icon-img"
+            onError={e => { e.currentTarget.style.opacity = '0.3' }}
+          />
+        </div>
         <span className={`project-category ${categoryClass}`}>{categoryLabel}</span>
         <h3 className="project-title">{title}</h3>
       </div>
@@ -22,7 +32,7 @@ export default function ProjectCard({ project }) {
       </div>
       <div className="project-footer">
         <Link to={`/projects/${id}`} className="btn-project btn-live">
-          🔗 Voir le projet
+          {tProjects ? tProjects.viewProject : '🔗 Voir le projet'}
         </Link>
         {githubUrl && (
           <a
@@ -31,7 +41,7 @@ export default function ProjectCard({ project }) {
             rel="noopener noreferrer"
             className="btn-project btn-code"
           >
-            ⌥ Code
+            {tProjects ? tProjects.code : '⌥ Code'}
           </a>
         )}
       </div>
@@ -43,6 +53,7 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     id: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
+    bgGradient: PropTypes.string,
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
     categoryLabel: PropTypes.string.isRequired,
@@ -53,4 +64,5 @@ ProjectCard.propTypes = {
     ).isRequired,
     githubUrl: PropTypes.string,
   }).isRequired,
+  tProjects: PropTypes.object,
 }
